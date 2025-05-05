@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Beige */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles par défaut */
+.navbar {
+    background-color: #8B4513; /* Marron */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Rend la barre de navigation fixe */
+    top: 0; /* Fixe la barre en haut de la page */
+    width: 100%; /* Prend toute la largeur de la page */
+    z-index: 1000; /* Assure que la barre reste au-dessus des autres éléments */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F5F5DC; /* Beige */
+    font-family: 'Georgia', serif;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit; /* Hérite de la couleur définie pour .logo */
+    pointer-events: auto; /* Permet le clic sans effet supplémentaire */
+}
+
+.logo a:hover {
+    text-decoration: none; /* Aucun effet au survol */
+    color: inherit; /* Conserve la couleur d'origine */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F5F5DC; /* Beige */
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #F5F5DC; /* Beige */
+    color: #8B4513; /* Marron */
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Prend 80% de la hauteur de la fenêtre */
+    text-align: center;
+}
+
+.logo-center img {
+    max-width: 150px; /* Taille maximale de l'image */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Ajoute un bord arrondi (cercle) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+}
+
+.logo-center h1 {
+    font-size: 2rem;
+    color: #8B4513; /* Marron */
+    font-family: 'Georgia', serif;
+}
+
+.about-container {
+    padding: 20px;
+    background-color: #FFF8DC; /* Beige clair */
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8B4513; /* Contour marron */
+}
+
+.about-container p {
+    margin-bottom: 15px;
+}
+
+.catalogue-container {
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les éléments */
+    align-items: flex-start; /* Aligne les éléments au début verticalement */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px;
+    background-color: #FFF8DC; /* Beige clair */
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalogue-item {
+    text-align: center;
+    max-width: 300px;
+    background-color: #FFFFFF;
+    border: 2px solid #8B4513; /* Contour marron */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalogue-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.catalogue-item h3 {
+    font-size: 1.5rem;
+    color: #8B4513; /* Marron */
+    margin-bottom: 10px;
+}
+
+.catalogue-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.contact-container {
+    padding: 20px;
+    background-color: #FFF8DC; /* Beige clair */
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8B4513; /* Contour marron */
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #8B4513; /* Marron */
+    margin-bottom: 20px;
+}
+
+.contact-container p, .contact-container ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contact-container a {
+    color: #8B4513; /* Marron */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #8B4513; /* Marron */
+    color: #F5F5DC; /* Beige */
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+    }
+}
